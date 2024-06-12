@@ -16,4 +16,4 @@
 - Ação de botão de chamada para ação (por exemplo, exibir uma mensagem de agradecimento ou redirecionar para outra página, utilizando JS, claro).
 - Escolha uma paleta de cores harmoniosa e fontes apropriadas.
 
-![imagem do site]()
+![imagem do site](/assets/images/pagina.jpg)
