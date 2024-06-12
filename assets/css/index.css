@@ -1,4 +1,4 @@
-/* Padronização */
+/* PADRONIZAÇÃO */
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -12,10 +12,11 @@
   --color-secondary: #76918d;
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-text: #003335;
+  --color-text: #04223c;
   font-size: 62.5%;
 }
 
+/* 003335  002c2e*/
 body {
   background: var(--color-backgroud);
   width: 100%;
@@ -25,14 +26,14 @@ body {
 
 #container {
   width: 100%;
-  padding-top: 7rem;
+  padding-top: 8rem;
 }
 
-/* Cabeçalho */
+/* CABEÇALHO */
 header {
   background: var(--color-secondary);
   width: 100%;
-  height: 10rem;
+  height: 7rem;
   position: fixed;
   top: 0rem;
   z-index: 1;
@@ -45,7 +46,7 @@ header {
 
 nav {
   float: right;
-  margin-top: 4rem;
+  margin-top: 2.3rem;
 }
 
 li {
@@ -57,19 +58,19 @@ li {
 
 h1 {
   position: absolute;
-  margin-top: 3rem;
-  left: 30rem;
+  margin-top: 1.5rem;
+  left: 28rem;
 }
 
-/* Logo */
+/* LOGO */
 
 #logo {
-  width: 9rem;
+  width: 8rem;
   float: left;
-  margin-top: 0.5rem;
+  margin-top: -0.2rem;
 }
 
-/* Links Navegação */
+/* LINKS NAVEGAÇÃO */
 
 a:link,
 a:active,
@@ -82,14 +83,134 @@ a:hover {
   font-weight: bold;
 }
 
-/* Footer */
-footer {
-  position: absolute;
+/* SEÇÃO SOBRE */
+.sobre {
+  width: 80%;
+  margin: 7rem auto;
+  min-height: 70rem;
+  color: var(--color-text);
+}
+
+.cx-sobre {
+  float: left;
+  width: 40%;
+  margin: 10rem 5rem;
+}
+
+.slogan {
+  width: 90%;
+  margin: 2.5rem auto 0;
+  font-size: 4rem;
+}
+
+.sobre p {
+  width: 90%;
+  margin: 5rem auto 0;
+  text-align: justify;
+  font-size: 2rem;
+}
+
+#img-apresentacao {
+  float: right;
+  width: 65rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px var(--color-black);
+}
+
+span {
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+/* SEÇÃO SERVIÇOS */
+
+.servicos {
+  clear: both;
+  width: 80%;
+  margin: 8.5rem auto;
+  min-height: 70rem;
+  color: var(--color-text);
+}
+
+.cx-servicos {
+  float: left;
+  width: 55%;
+  margin: 12rem 5rem 10rem 10rem;
+  font-size: 2rem;
+}
+
+.cx-servicos h2 {
+  margin-bottom: 2rem;
+}
+
+.cx-servicos p {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+#list-servicos {
+  width: 90%;
+}
+
+#item-servicos {
   width: 100%;
-  bottom: 0;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+#img-servicos {
+  float: left;
+  width: 45rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px var(--color-black);
+}
+
+/* SEÇÃO MISSÃO */
+.missao {
+  width: 80%;
+  margin: 10rem auto;
+  color: var(--color-text);
+}
+
+.missao h2 {
   text-align: center;
-  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.missao p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.missao ul {
+  float: left;
+  width: 45%;
+  margin-top: 12rem;
+}
+
+.missao li {
+  width: 100%;
+  margin-bottom: 1rem;
+  list-style-type: square;
+  margin-left: 7rem;
+}
+
+.missao img {
+  float: right;
+  width: 45%;
+  margin: 4rem 1rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px var(--color-black);
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  clear: both;
+  line-height: 3rem;
+  text-align: center;
   background-color: var(--color-secondary);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--color-text);
 }
