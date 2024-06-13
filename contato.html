@@ -62,7 +62,7 @@
                     <label for="mensagem">Mensagem</label>
                     <textarea name="mensagem" id="mensagem" rows="10"></textarea>
 
-                    <button type="submit" id="btn-form" onclick="validarDados()">Enviar</button>
+                    <button type="submit" id="btn-form">Enviar</button>
                 </form>
             </div>
 
@@ -72,7 +72,7 @@
                 <div class="modal-body">
                     <p>Mensagem enviada.</p>
                     <p>Agradecemos o contato.</p>
-                    <button id="btn-modal">Fechar</button>
+                    <button id="btn-modal" type="button" onclick="validarDados()">Fechar</button>
                 </div>
             </div>
         </main>
