@@ -43,10 +43,22 @@
             <div id="bg-img"></div>
 
             <div id="content">
+
+
                 <form id="form">
+                    <h2>Fale Conosco</h2>
 
-                    <label for="name">Nome Completo:</label>
+                    <label for="name">Seu nome (obrigatório)</label>
+                    <input type="text" class="name" id="name" required>
 
+                    <label for="email">Seu e-mail (obrigatório)</label>
+                    <input type="email" class="email" id="email" required placeholder="exemplo@email.com">
+
+                    <label for="assunto">Assunto</label>
+                    <input type="text" class="assunto" id="assunto" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="60" rows="10"></textarea>
                 </form>
             </div>
         </main>
