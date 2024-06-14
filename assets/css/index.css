@@ -231,6 +231,7 @@ span {
 .duvidas {
   clear: both;
   width: 80%;
+  min-height: 60vh;
   margin: 3rem auto;
   padding-top: 3rem;
   border: 2px solid black;
@@ -253,8 +254,35 @@ span {
   text-align: center;
 }
 
+.resposta {
+  clear: both;
+  display: block;
+  width: 80%;
+  margin: 2rem auto;
+  border-left: 1px solid var(--color-black);
+  border-right: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+}
+
+.resposta-off {
+  display: none;
+  clear: both;
+  display: block;
+  width: 80%;
+  position: absolute;
+  top: 235rem;
+  z-index: 1;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-left: 1px solid var(--color-black);
+  border-right: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  border-radius: 5px;
+}
+
 .resposta p {
   display: block;
+  padding: 1rem;
 }
 
 /* FOOTER */
