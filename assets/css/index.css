@@ -4,6 +4,7 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  color: var(--color-text);
 }
 
 :root {
@@ -88,7 +89,6 @@ a:hover {
   width: 80%;
   margin: 7rem auto;
   min-height: 70rem;
-  color: var(--color-text);
 }
 
 .cx-sobre {

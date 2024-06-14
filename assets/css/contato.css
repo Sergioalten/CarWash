@@ -4,6 +4,7 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  color: var(--color-text);
 }
 
 :root {
@@ -161,7 +162,7 @@ textarea {
 
 #btn-form:hover,
 #btn-modal:hover {
-  /* font-weight: bold; */
+  font-weight: bold;
   opacity: 0.8;
   cursor: pointer;
 }
@@ -234,5 +235,4 @@ footer {
   line-height: 3rem;
   text-align: center;
   font-size: 1.6rem;
-  color: var(--color-text);
 }

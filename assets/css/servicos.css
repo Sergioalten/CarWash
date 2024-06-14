@@ -4,6 +4,7 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  color: var(--color-text);
 }
 
 :root {
@@ -16,10 +17,10 @@
   font-size: 62.5%;
 }
 
+/* 003335  002c2e*/
 body {
   background: var(--color-backgroud);
   width: 100%;
-  min-height: 100vh;
   font-size: 1.8rem;
 }
 
@@ -80,6 +81,131 @@ a:visited {
 
 a:hover {
   font-weight: bold;
+}
+
+/* SEÇÕES GERAL*/
+
+span {
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+img {
+  width: 1.2rem;
+  margin-right: 1rem;
+}
+
+.itens-servicos {
+  font-size: 1.8rem;
+  clear: both;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* SEÇÃO CAPA */
+
+.capa {
+  clear: both;
+  width: 90%;
+  margin: 2rem auto 0;
+  padding-bottom: 1rem;
+  min-height: 10rem;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.capa h2 {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 3.4rem;
+}
+
+.capa .p1 {
+  display: block;
+  text-align: center;
+}
+
+.capa .p2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* SEÇÃO LAVAGEM */
+.lavagem {
+  margin: 1rem auto;
+  padding-bottom: 1rem;
+  width: 90%;
+  min-height: 50vh;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+/* SEÇÃO INTERIOR */
+.interior {
+  margin: 1rem auto;
+  padding-bottom: 1rem;
+  width: 90%;
+  min-height: 50vh;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+/* SEÇÃO POLIMENTO */
+.polimento {
+  margin: 1rem auto;
+  padding-bottom: 1rem;
+  width: 90%;
+  min-height: 50vh;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+/* SEÇÃO RODAS */
+.rodas {
+  margin: 1rem auto;
+  padding-bottom: 1rem;
+  width: 90%;
+  min-height: 50vh;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+/* SEÇÃO READ */
+.read {
+  margin: 1rem auto;
+  padding: 2rem 0;
+  width: 90%;
+}
+
+#img-detalhes {
+  float: left;
+  width: 50%;
+}
+
+#img-detalhes img {
+  display: block;
+  width: 20rem;
+  margin: 0 auto;
+}
+
+#list-detalhes {
+  float: right;
+  width: 50%;
+  height: 20rem;
+}
+
+#itens {
+  clear: both;
+  list-style-type: square;
+  font-size: 1.8rem;
+  padding: 0;
+  margin: 0.5rem 2rem;
+}
+
+.read p {
+  clear: both;
+  text-align: center;
+  margin: 2rem 0;
+  padding: 5rem 0 0;
 }
 
 /* FOOTER */
