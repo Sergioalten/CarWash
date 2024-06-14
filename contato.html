@@ -14,6 +14,8 @@
     <link rel="shortcut icon" type="image/png" href="./assets/images/esteticaFinal.png" />
     <link rel="stylesheet" href="./assets/css/contato.css">
 
+    <script src="./assets/js/script.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -40,16 +42,45 @@
         </header>
 
         <main>
+            <div id="bg-img"></div>
+
+            <div id="content">
+
+
+                <form id="form">
+                    <h2>Fale Conosco</h2>
+
+                    <label for="user">Seu nome <span>(obrigatório)</span></label>
+                    <input type="text" class="user" id="user" required>
+
+                    <label for="email">Seu e-mail <span>(obrigatório)</span></label>
+                    <input type="email" class="email" id="email" required placeholder="exemplo@email.com">
+
+                    <label for="title">Assunto <span>(obrigatório)</span></label>
+                    <input type="text" class="title" id="title" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="10"></textarea>
+
+                    <button type="submit" id="btn-form" onclick="validarDados()">Enviar</button>
+                </form>
+            </div>
+
+            <div id="fade" class="hide"></div>
+
+            <div id="modal" class="hide">
+                <div class="modal-body">
+                    <p>Mensagem enviada com sucesso.</p>
+                    <p>Agradecemos o contato.</p>
+                    <button id="btn-modal" type="button">Fechar</button>
+                </div>
+            </div>
         </main>
 
         <footer>
             <p>&copy; Desenvolvido por <a href="https://github.com/Sergioalten" target="_blank">Sérgio Altenhofen</a>
             </p>
         </footer>
-
-
-        <script src="./assets/js/script.js"></script>
-
     </div>
 
 </body>
