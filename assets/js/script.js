@@ -38,3 +38,18 @@ const toggleModal = () => {
 [closeModalButton, fade].forEach((el) => {
     el.addEventListener("click", () => toggleModal());
 })
+
+
+function mostrarResposta(){
+    let el = document. getElementById('resposta');
+
+    let classResposta = el.classList;
+
+    if(classResposta == 'resposta-off'){
+        el.classList.remove('resposta-off');
+        el.classList.add('resposta-on');     
+    } else{
+        el.classList.remove('resposta-on');
+        el.classList.add('resposta-off');     
+    }
+}
