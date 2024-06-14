@@ -17,7 +17,6 @@
   font-size: 62.5%;
 }
 
-/* 003335  002c2e*/
 body {
   background: var(--color-backgroud);
   width: 100%;
@@ -90,14 +89,15 @@ span {
   font-size: 2.3rem;
 }
 
-img {
+.img-check {
   width: 1.2rem;
   margin-right: 1rem;
 }
 
 .itens-servicos {
-  font-size: 1.8rem;
   clear: both;
+  font-size: 1.6rem;
+  margin: 0 auto;
 }
 
 h3 {
@@ -106,7 +106,17 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
-/* SEÇÃO CAPA */
+.title {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* SEÇÃO INICIAL */
 
 .capa {
   clear: both;
@@ -135,45 +145,36 @@ h3 {
 
 /* SEÇÃO LAVAGEM */
 .lavagem {
-  margin: 1rem auto;
+  display: block;
+  margin: 3rem auto;
   padding-bottom: 1rem;
-  width: 90%;
-  min-height: 50vh;
-  border-bottom: 1px solid var(--color-secondary);
+  width: 40%;
+  border: 1px solid black;
 }
 
-/* SEÇÃO INTERIOR */
-.interior {
-  margin: 1rem auto;
-  padding-bottom: 1rem;
-  width: 90%;
-  min-height: 50vh;
-  border-bottom: 1px solid var(--color-secondary);
+.img-lavagem {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid black;
 }
 
-/* SEÇÃO POLIMENTO */
-.polimento {
-  margin: 1rem auto;
-  padding-bottom: 1rem;
-  width: 90%;
-  min-height: 50vh;
-  border-bottom: 1px solid var(--color-secondary);
+.img-lavagem img {
+  display: block;
+  width: 15vh;
+  border: 1px solid red;
 }
 
-/* SEÇÃO RODAS */
-.rodas {
-  margin: 1rem auto;
-  padding-bottom: 1rem;
-  width: 90%;
-  min-height: 50vh;
-  border-bottom: 1px solid var(--color-secondary);
+.descricao-lavagem {
+  width: 60%;
+  display: inline-block;
+  border: 1px solid yellow;
 }
 
 /* SEÇÃO READ */
 .read {
   margin: 1rem auto;
-  padding: 2rem 0;
-  width: 90%;
+  padding: 1rem 0;
+  width: 60%;
 }
 
 #img-detalhes {
@@ -216,5 +217,4 @@ footer {
   text-align: center;
   background-color: var(--color-secondary);
   font-size: 1.6rem;
-  color: var(--color-text);
 }
