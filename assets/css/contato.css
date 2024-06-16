@@ -55,10 +55,10 @@ li {
   font-size: 2rem;
 }
 
-h1 {
-  position: absolute;
+.title-logo {
+  float: left;
   margin-top: 1.5rem;
-  left: 28rem;
+  margin-left: 1.5rem;
 }
 
 /* LOGO */
