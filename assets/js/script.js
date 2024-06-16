@@ -1,3 +1,4 @@
+
 const user = document.getElementById('user');
 const email = document.getElementById('email');
 const title = document.getElementById('title');
@@ -53,7 +54,6 @@ function mostrarResposta(id){
         el.classList.add('resposta-off1');
         contador--;    
     }
-    
 
     if(classResposta == 'resposta-off2'){
         el.classList.remove('resposta-off2');
@@ -84,5 +84,5 @@ function mostrarResposta(id){
         el.classList.add('resposta-off4');
         contador--;     
     }
-
+   
 }

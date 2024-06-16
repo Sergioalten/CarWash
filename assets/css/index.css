@@ -35,7 +35,7 @@ header {
   height: 7rem;
   position: fixed;
   top: 0rem;
-  z-index: 1;
+  z-index: 5;
 }
 
 #cabecalho {
@@ -226,19 +226,10 @@ span {
 
 /* DÚVIDAS */
 
-#duvidas-comp {
+#duvidas {
   clear: both;
   width: 80%;
   min-height: 55vh;
-  margin: 3rem auto;
-  padding-top: 3rem;
-  margin-bottom: auto;
-}
-
-#duvidas-incomp {
-  clear: both;
-  width: 80%;
-  min-height: 50vh;
   margin: 3rem auto;
   padding-top: 3rem;
   margin-bottom: auto;
@@ -250,7 +241,7 @@ span {
   margin: 0 auto;
 }
 
-#duvidas-comp h2 {
+#duvidas h2 {
   font-size: 2.4rem;
   padding-bottom: 2rem;
   text-align: center;
