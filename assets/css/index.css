@@ -20,7 +20,6 @@
 body {
   background: var(--color-backgroud);
   width: 100%;
-  min-height: 100vh;
   font-size: 1.8rem;
 }
 
@@ -227,12 +226,22 @@ span {
 
 /* DÚVIDAS */
 
-.duvidas {
+#duvidas-comp {
   clear: both;
   width: 80%;
-  min-height: 60vh;
+  min-height: 55vh;
   margin: 3rem auto;
   padding-top: 3rem;
+  margin-bottom: auto;
+}
+
+#duvidas-incomp {
+  clear: both;
+  width: 80%;
+  min-height: 50vh;
+  margin: 3rem auto;
+  padding-top: 3rem;
+  margin-bottom: auto;
 }
 
 #faq {
@@ -241,7 +250,7 @@ span {
   margin: 0 auto;
 }
 
-.duvidas h2 {
+#duvidas-comp h2 {
   font-size: 2.4rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -267,9 +276,9 @@ span {
 }
 
 #faq-item2 {
-  position: relative;
+  position: absolute;
   width: 80%;
-  top: 14rem;
+  top: 10rem;
   left: 20rem;
   padding: 0.5rem;
   font-size: 1.8rem;
@@ -282,17 +291,7 @@ span {
 #faq-item3 {
   position: absolute;
   width: 80%;
-  left: 20rem;
-  padding: 0.5rem;
-  font-size: 1.8rem;
-  z-index: 2;
-  border: 1px solid var(--color-black);
-  border-radius: 5px;
-  box-shadow: 0 0 4px var(--color-black);
-}
-#faq-item4 {
-  position: absolute;
-  width: 80%;
+  top: 20rem;
   left: 20rem;
   padding: 0.5rem;
   font-size: 1.8rem;
@@ -302,48 +301,144 @@ span {
   box-shadow: 0 0 4px var(--color-black);
 }
 
-.resposta-on {
+#faq-item4 {
+  position: absolute;
+  width: 80%;
+  top: 30rem;
+  left: 20rem;
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  z-index: 2;
+  border: 1px solid var(--color-black);
+  border-radius: 5px;
+  box-shadow: 0 0 4px var(--color-black);
+}
+
+.resposta-on1 {
   clear: both;
   display: block;
   width: 80%;
   position: absolute;
   top: 3.5rem;
   left: 20rem;
-  padding: 2rem;
+  padding: 1rem;
+  margin-bottom: 20rem;
   text-align: justify;
-  border-left: 2px solid var(--color-black);
-  border-right: 2px solid var(--color-black);
-  border-bottom: 2px solid var(--color-black);
-  border-radius: 5px;
+  font-size: 1.6rem;
   transition: 0.3s;
   opacity: 1;
   z-index: 2;
 }
 
-.resposta-off {
+.resposta-off1 {
   clear: both;
   display: block;
   width: 80%;
   position: absolute;
-  top: 0;
+  top: 2rem;
   left: 20rem;
+  margin-bottom: 30rem;
+  padding: 1rem;
   text-align: justify;
+  font-size: 1.6rem;
   z-index: 1;
-  padding: 2rem;
-  border-radius: 5px;
   transition: 0.3s;
   opacity: 0;
 }
 
-.resposta p {
+.resposta-on2 {
+  clear: both;
   display: block;
+  width: 80%;
+  position: relative;
+  top: 13.5rem;
+  left: 20rem;
   padding: 1rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  transition: 0.3s;
+  opacity: 1;
+  z-index: 2;
+}
+
+.resposta-off2 {
+  clear: both;
+  display: block;
+  width: 80%;
+  position: absolute;
+  top: 12rem;
+  left: 20rem;
+  padding: 1rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  z-index: 1;
+  transition: 0.3s;
+  opacity: 0;
+}
+.resposta-on3 {
+  clear: both;
+  display: block;
+  width: 80%;
+  position: absolute;
+  top: 23.5rem;
+  left: 20rem;
+  padding: 1rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  transition: 0.3s;
+  opacity: 1;
+  z-index: 2;
+}
+
+.resposta-off3 {
+  clear: both;
+  display: block;
+  width: 80%;
+  position: absolute;
+  top: 21.5rem;
+  left: 20rem;
+  padding: 1rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  z-index: 1;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.resposta-on4 {
+  clear: both;
+  display: block;
+  width: 80%;
+  position: absolute;
+  top: 33.5rem;
+  left: 20rem;
+  padding: 1rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  transition: 0.3s;
+  opacity: 1;
+  z-index: 2;
+}
+
+.resposta-off4 {
+  clear: both;
+  display: block;
+  width: 80%;
+  position: absolute;
+  top: 32rem;
+  left: 20rem;
+  padding: 1rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  z-index: 1;
+  transition: 0.3s;
+  opacity: 0;
 }
 
 /* FOOTER */
 footer {
   width: 100%;
-  clear: both;
+  position: relative;
   line-height: 3rem;
   text-align: center;
   background-color: var(--color-secondary);

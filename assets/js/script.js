@@ -39,17 +39,50 @@ const toggleModal = () => {
     el.addEventListener("click", () => toggleModal());
 })
 
-
-function mostrarResposta(){
-    let el = document. getElementById('resposta');
+function mostrarResposta(id){
+    let el = document.getElementById(id);
 
     let classResposta = el.classList;
 
-    if(classResposta == 'resposta-off'){
-        el.classList.remove('resposta-off');
-        el.classList.add('resposta-on');     
-    } else{
-        el.classList.remove('resposta-on');
-        el.classList.add('resposta-off');     
+    if(classResposta == 'resposta-off1'){
+        el.classList.remove('resposta-off1');
+        el.classList.add('resposta-on1');
+        contador++;  
+    } else if (classResposta == 'resposta-on1'){
+        el.classList.remove('resposta-on1');
+        el.classList.add('resposta-off1');
+        contador--;    
     }
+    
+
+    if(classResposta == 'resposta-off2'){
+        el.classList.remove('resposta-off2');
+        el.classList.add('resposta-on2');
+        contador++;     
+    } else if(classResposta == 'resposta-on2'){
+        el.classList.remove('resposta-on2');
+        el.classList.add('resposta-off2');
+        contador--;     
+    }
+
+    if(classResposta == 'resposta-off3'){
+        el.classList.remove('resposta-off3');
+        el.classList.add('resposta-on3');
+        contador++;     
+    } else if(classResposta == 'resposta-on3'){
+        el.classList.remove('resposta-on3');
+        el.classList.add('resposta-off3');
+        contador--;     
+    }
+
+    if(classResposta == 'resposta-off4'){
+        el.classList.remove('resposta-off4');
+        el.classList.add('resposta-on4');
+        contador++;  
+    } else if(classResposta == 'resposta-on4'){
+        el.classList.remove('resposta-on4');
+        el.classList.add('resposta-off4');
+        contador--;     
+    }
+
 }
