@@ -234,7 +234,6 @@ span {
   min-height: 60vh;
   margin: 3rem auto;
   padding-top: 3rem;
-  border: 2px solid black;
 }
 
 .duvidas h2 {
@@ -262,8 +261,8 @@ span {
 }
 
 #faq-item2 {
-  position: absolute;
-  left: 38rem;
+  position: relative;
+  top: 10rem;
   padding: 0.5rem;
   font-size: 1.8rem;
   z-index: 2;
@@ -320,7 +319,7 @@ span {
   display: block;
   width: 60%;
   position: absolute;
-  top: 235rem;
+  top: 240rem;
   left: 38rem;
   text-align: justify;
   z-index: 1;
