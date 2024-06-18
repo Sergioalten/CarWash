@@ -1,4 +1,4 @@
-
+// Validar dados de entrada
 const user = document.getElementById('user');
 const email = document.getElementById('email');
 const title = document.getElementById('title');
@@ -23,6 +23,7 @@ function validarDados(){
     }
 }
 
+// Modal do formulário
 const openModalButton = document.querySelector("#btn-form");
 const closeModalButton = document.querySelector("#btn-modal");
 const modal = document.querySelector("#modal");
@@ -40,49 +41,53 @@ const toggleModal = () => {
     el.addEventListener("click", () => toggleModal());
 })
 
+// Mostrar as repostas da seção de dúvidas frequentes e alterar a imagem das setas
 function mostrarResposta(id){
     let el = document.getElementById(id);
-
+    const setaPergunta1 = document.querySelector('.faq-img1');
+    const setaPergunta2 = document.querySelector('.faq-img2');
+    const setaPergunta3 = document.querySelector('.faq-img3');
+    const setaPergunta4 = document.querySelector('.faq-img4');
     let classResposta = el.classList;
 
     if(classResposta == 'resposta-off1'){
         el.classList.remove('resposta-off1');
         el.classList.add('resposta-on1');
-        contador++;  
+        setaPergunta1.setAttribute("src", "/assets/images/up.png");  
     } else if (classResposta == 'resposta-on1'){
         el.classList.remove('resposta-on1');
         el.classList.add('resposta-off1');
-        contador--;    
+        setaPergunta1.setAttribute("src", "/assets/images/down.png");  
     }
 
     if(classResposta == 'resposta-off2'){
         el.classList.remove('resposta-off2');
         el.classList.add('resposta-on2');
-        contador++;     
+        setaPergunta2.setAttribute("src", "/assets/images/up.png");    
     } else if(classResposta == 'resposta-on2'){
         el.classList.remove('resposta-on2');
         el.classList.add('resposta-off2');
-        contador--;     
+        setaPergunta2.setAttribute("src", "/assets/images/down.png");     
     }
 
     if(classResposta == 'resposta-off3'){
         el.classList.remove('resposta-off3');
         el.classList.add('resposta-on3');
-        contador++;     
+        setaPergunta3.setAttribute("src", "/assets/images/up.png");    
     } else if(classResposta == 'resposta-on3'){
         el.classList.remove('resposta-on3');
         el.classList.add('resposta-off3');
-        contador--;     
+        setaPergunta3.setAttribute("src", "/assets/images/down.png");    
     }
 
     if(classResposta == 'resposta-off4'){
         el.classList.remove('resposta-off4');
         el.classList.add('resposta-on4');
-        contador++;  
+        setaPergunta4.setAttribute("src", "/assets/images/up.png");
     } else if(classResposta == 'resposta-on4'){
         el.classList.remove('resposta-on4');
         el.classList.add('resposta-off4');
-        contador--;     
+        setaPergunta4.setAttribute("src", "/assets/images/down.png");   
     }
    
 }

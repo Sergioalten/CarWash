@@ -253,7 +253,10 @@ span {
   text-align: center;
 }
 
-.faq-img {
+.faq-img1,
+.faq-img2,
+.faq-img3,
+.faq-img4 {
   display: inline;
   width: 1.3rem;
   margin-left: 1rem;
@@ -308,11 +311,10 @@ span {
 .resposta-on1 {
   clear: both;
   display: block;
-  width: 80%;
+  width: 100%;
   position: relative;
   padding: 1rem;
   margin-bottom: 2rem;
-  text-align: justify;
   font-size: 1.6rem;
   transition: 0.3s;
   opacity: 1;
@@ -322,12 +324,10 @@ span {
 .resposta-off1 {
   pointer-events: none;
   clear: both;
-  display: block;
-  width: 80%;
+  width: 100%;
   position: relative;
   margin-bottom: -5rem;
   padding: 1rem;
-  text-align: justify;
   font-size: 1.6rem;
   z-index: 1;
   transition: 0.3s;
@@ -337,11 +337,10 @@ span {
 .resposta-on2 {
   clear: both;
   display: block;
-  width: 80%;
+  width: 100%;
   position: relative;
   padding: 1rem;
   margin-bottom: 2rem;
-  text-align: justify;
   font-size: 1.6rem;
   transition: 0.3s;
   opacity: 1;
@@ -351,12 +350,10 @@ span {
 .resposta-off2 {
   pointer-events: none;
   clear: both;
-  display: block;
-  width: 80%;
+  width: 100%;
   position: relative;
   margin-bottom: -5rem;
   padding: 1rem;
-  text-align: justify;
   font-size: 1.6rem;
   z-index: 1;
   transition: 0.3s;
@@ -366,11 +363,10 @@ span {
 .resposta-on3 {
   clear: both;
   display: block;
-  width: 80%;
+  width: 100%;
   position: relative;
   padding: 1rem;
   margin-bottom: 2rem;
-  text-align: justify;
   font-size: 1.6rem;
   transition: 0.3s;
   opacity: 1;
@@ -380,12 +376,10 @@ span {
 .resposta-off3 {
   pointer-events: none;
   clear: both;
-  display: block;
-  width: 80%;
+  width: 100%;
   position: relative;
   margin-bottom: -5rem;
   padding: 1rem;
-  text-align: justify;
   font-size: 1.6rem;
   z-index: 1;
   transition: 0.3s;
@@ -395,11 +389,10 @@ span {
 .resposta-on4 {
   clear: both;
   display: block;
-  width: 80%;
+  width: 100%;
   position: relative;
   padding: 1rem;
   margin-bottom: 2rem;
-  text-align: justify;
   font-size: 1.6rem;
   transition: 0.3s;
   opacity: 1;
@@ -409,12 +402,10 @@ span {
 .resposta-off4 {
   pointer-events: none;
   clear: both;
-  display: block;
-  width: 80%;
+  width: 100%;
   position: relative;
   margin-bottom: -5rem;
   padding: 1rem;
-  text-align: justify;
   font-size: 1.6rem;
   z-index: 1;
   transition: 0.3s;
