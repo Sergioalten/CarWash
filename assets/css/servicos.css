@@ -11,10 +11,15 @@
   --color-backgroud: linear-gradient(180deg, #cfe2e8 0%, #77928e 100%);
   --color-primary: #cfe2e8;
   --color-secondary: #76918d;
+  --color-secondaryOpacity: rgb(118, 145, 141, 0.8);
   --color-black: #000000;
   --color-white: #ffffff;
   --color-text: #04223c;
   font-size: 62.5%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,12 +35,13 @@ body {
 
 /* CABEÇALHO */
 header {
-  background: var(--color-secondary);
+  background: var(--color-secondaryOpacity);
   width: 100%;
   height: 7rem;
   position: fixed;
   top: 0rem;
   z-index: 1;
+  opacity: 0.95;
 }
 
 #cabecalho {
