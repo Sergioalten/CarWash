@@ -53,41 +53,41 @@ function mostrarResposta(id){
     if(classResposta == 'resposta-off1'){
         el.classList.remove('resposta-off1');
         el.classList.add('resposta-on1');
-        setaPergunta1.setAttribute("src", "/assets/images/up.png");  
+        setaPergunta1.setAttribute("src", "./assets/images/up.png");  
     } else if (classResposta == 'resposta-on1'){
         el.classList.remove('resposta-on1');
         el.classList.add('resposta-off1');
-        setaPergunta1.setAttribute("src", "/assets/images/down.png");  
+        setaPergunta1.setAttribute("src", "./assets/images/down.png");  
     }
 
     if(classResposta == 'resposta-off2'){
         el.classList.remove('resposta-off2');
         el.classList.add('resposta-on2');
-        setaPergunta2.setAttribute("src", "/assets/images/up.png");    
+        setaPergunta2.setAttribute("src", "./assets/images/up.png");    
     } else if(classResposta == 'resposta-on2'){
         el.classList.remove('resposta-on2');
         el.classList.add('resposta-off2');
-        setaPergunta2.setAttribute("src", "/assets/images/down.png");     
+        setaPergunta2.setAttribute("src", "./assets/images/down.png");     
     }
 
     if(classResposta == 'resposta-off3'){
         el.classList.remove('resposta-off3');
         el.classList.add('resposta-on3');
-        setaPergunta3.setAttribute("src", "/assets/images/up.png");    
+        setaPergunta3.setAttribute("src", "./assets/images/up.png");    
     } else if(classResposta == 'resposta-on3'){
         el.classList.remove('resposta-on3');
         el.classList.add('resposta-off3');
-        setaPergunta3.setAttribute("src", "/assets/images/down.png");    
+        setaPergunta3.setAttribute("src", "./assets/images/down.png");    
     }
 
     if(classResposta == 'resposta-off4'){
         el.classList.remove('resposta-off4');
         el.classList.add('resposta-on4');
-        setaPergunta4.setAttribute("src", "/assets/images/up.png");
+        setaPergunta4.setAttribute("src", "./assets/images/up.png");
     } else if(classResposta == 'resposta-on4'){
         el.classList.remove('resposta-on4');
         el.classList.add('resposta-off4');
-        setaPergunta4.setAttribute("src", "/assets/images/down.png");   
+        setaPergunta4.setAttribute("src", "./assets/images/down.png");   
     }
    
 }
