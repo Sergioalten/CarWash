@@ -2,6 +2,8 @@
 
 **Aluno:** [Sérgio Altenhofen](https://github.com/Sergioalten)
 
+https://sergioalten.github.io/CarWash/
+
 - Landing Page criada para a atividade 1 do módulo 3 da Formação: Dev Full Stack Junior da [+PraTI](https://www.maisprati.com.br/) e [Codifica](https://www.codificaedu.com.br/).
 
 - Desenvolver uma landing page simples utilizando HTML, CSS e JavaScript.
