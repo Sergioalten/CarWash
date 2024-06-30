@@ -64,6 +64,7 @@ a:visited {
   display: flex;
   gap: 3rem;
   list-style: none;
+  letter-spacing: 0.1rem;
 }
 
 .nav-list-link {
@@ -80,166 +81,156 @@ a:visited {
 }
 
 /* SEÇÃO SOBRE */
-.sobre {
+.about-container {
   width: 80%;
-  margin: 7rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 6rem auto 7rem;
   min-height: 70rem;
 }
 
-.cx-sobre {
-  float: left;
+.about {
   width: 40%;
-  margin: 10rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .slogan {
   width: 90%;
-  margin: 2.5rem auto 0;
   font-size: 4rem;
 }
 
-.sobre p {
+.about p {
   width: 90%;
-  margin: 5rem auto 0;
-  text-align: justify;
-  font-size: 2rem;
+  line-height: 1.5;
 }
 
-#img-apresentacao {
-  float: right;
-  width: 65rem;
-  border-radius: 15px;
-  box-shadow: 0 0 10px var(--color-black);
+#about-img {
+  width: 40%;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px -5px var(--color-black);
 }
 
-span {
+.about span {
   font-weight: bold;
   font-size: 2.3rem;
 }
 
 /* SEÇÃO SERVIÇOS */
 
-.servicos {
-  clear: both;
+.services-container {
   width: 80%;
-  margin: 8.5rem auto;
-  min-height: 70rem;
-  color: var(--color-text);
+  margin: 7rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.cx-servicos {
-  float: left;
-  width: 55%;
-  margin: 8rem 5rem 10rem 10rem;
+.services {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  line-height: 1.5;
+}
+
+.services-img {
+  width: 30%;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px -5px var(--color-black);
+}
+
+.services-tilte {
+  text-align: center;
+  font-size: 3.8rem;
+}
+
+.services-lis-item {
+  margin-bottom: 1.5rem;
+}
+
+.services-lis-item strong {
   font-size: 2rem;
 }
 
-.cx-servicos h2 {
-  margin-bottom: 2rem;
-}
-
-.cx-servicos p {
-  width: 90%;
-  margin: 2rem auto;
-}
-
-#list-servicos {
-  width: 90%;
-}
-
-#item-servicos {
-  width: 100%;
-  margin-left: 2rem;
-  margin-top: 2rem;
-  text-align: justify;
-}
-
-#img-servicos {
-  float: left;
-  width: 45rem;
-  border-radius: 15px;
-  box-shadow: 0 0 10px var(--color-black);
-}
-
 .btn {
-  clear: both;
   width: 100%;
-  margin-top: 40rem;
   text-align: center;
 }
 
 .btn-more {
   font-size: 2rem;
-  border: none;
   border-radius: 0.5rem;
-  padding: 0.6rem 0.6rem;
+  padding: 0.8rem;
   background-color: var(--color-primary);
-  opacity: 1;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .btn-more:hover {
   font-weight: bold;
   opacity: 0.8;
-  cursor: pointer;
 }
 
 /* SEÇÃO MISSÃO */
-.missao {
-  width: 80%;
-  margin: 10rem auto;
-}
-
-.missao h2 {
+.hero-title {
+  display: block;
+  margin-top: 10rem;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
-.missao p {
+.hero-container {
+  width: 80%;
+  margin: 4rem auto 7rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  line-height: 1.5;
+}
+
+.hero-p {
   font-size: 2.3rem;
-  margin-bottom: 6rem;
-  margin-left: 5rem;
 }
 
-.missao ul {
-  float: left;
-  width: 45%;
-  margin-top: 7rem;
+.hero-p span {
+  font-weight: bold;
+  font-size: 2.3rem;
 }
 
-.missao li {
-  width: 100%;
-  margin-bottom: 1rem;
-  margin-left: 7rem;
+.hero-list-item {
+  margin: 0 0 1rem 2rem;
 }
 
-.missao img {
-  float: right;
-  width: 45%;
-  margin: 4rem 1rem;
-  border-radius: 15px;
-  box-shadow: 0 0 10px var(--color-black);
+.hero-img {
+  width: 40%;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px -5px var(--color-black);
 }
 
 /* DÚVIDAS */
 
-#duvidas {
-  clear: both;
+.duvidas {
   width: 80%;
-  margin: 3rem auto;
+  margin: 7rem auto;
   padding-top: 3rem;
-  margin-bottom: auto;
 }
 
 #faq {
   width: 80%;
-  margin: 0 auto 6rem;
+  margin: 0 auto;
 }
 
-#duvidas h2 {
+.duvidas h2 {
   display: block;
   font-size: 2.4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   text-align: center;
 }
 
@@ -262,7 +253,7 @@ span {
   z-index: 3;
   border: 1px solid var(--color-black);
   border-radius: 5px;
-  box-shadow: 0 0 4px var(--color-black);
+  box-shadow: 0 0 10px -5px var(--color-black);
 }
 
 #faq-item2 {
@@ -273,7 +264,7 @@ span {
   z-index: 3;
   border: 1px solid var(--color-black);
   border-radius: 5px;
-  box-shadow: 0 0 4px var(--color-black);
+  box-shadow: 0 0 10px -5px var(--color-black);
 }
 
 #faq-item3 {
@@ -284,7 +275,7 @@ span {
   z-index: 3;
   border: 1px solid var(--color-black);
   border-radius: 5px;
-  box-shadow: 0 0 4px var(--color-black);
+  box-shadow: 0 0 10px -5px var(--color-black);
 }
 
 #faq-item4 {
@@ -295,7 +286,7 @@ span {
   z-index: 3;
   border: 1px solid var(--color-black);
   border-radius: 5px;
-  box-shadow: 0 0 4px var(--color-black);
+  box-shadow: 0 0 10px -5px var(--color-black);
 }
 
 .resposta-on1 {
