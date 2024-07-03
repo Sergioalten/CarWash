@@ -42,7 +42,7 @@ a:visited {
 }
 
 /* CABEÇALHO */
-.header {
+.header-main {
   background: var(--color-secondaryOpacity);
   width: 100%;
   display: flex;
@@ -63,6 +63,7 @@ a:visited {
 
 .header-nav-list {
   display: flex;
+  align-items: center;
   gap: 2rem;
   list-style: none;
   letter-spacing: 0.1rem;
@@ -270,4 +271,17 @@ footer {
   text-align: center;
   background-color: var(--color-secondary);
   font-size: 1.6rem;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 48rem) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .nav-list-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+  }
 }

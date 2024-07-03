@@ -47,6 +47,7 @@ a:visited {
   width: 100%;
   display: flex;
   position: sticky;
+  z-index: 2;
   top: 0;
   left: 0;
   opacity: 0.95;
@@ -469,4 +470,17 @@ a:visited {
   text-align: center;
   font-size: 1.6rem;
   padding: 1rem;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 48rem) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .nav-list-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+  }
 }

@@ -46,7 +46,7 @@ a:visited {
 
 /* CABEÇALHO */
 .header {
-  background: var(--color-secondary);
+  background: var(--color-secondaryOpacity);
   width: 100%;
   display: flex;
 }
