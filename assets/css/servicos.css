@@ -80,51 +80,16 @@ a:visited {
   color: var(--color-primary);
 }
 
-/* SEÇÕES GERAL*/
-
-span {
-  font-weight: bold;
-  font-size: 2.3rem;
-}
-
-.img-check {
-  width: 1.2rem;
-  margin-right: 1rem;
-}
-
-.itens-servicos {
-  clear: both;
-  font-size: 1.6rem;
-  margin-left: 1rem;
-  margin-bottom: 3rem;
-}
-
-h3 {
-  text-align: center;
-  font-size: 2.6rem;
-  margin-bottom: 1.5rem;
-}
-
-.title {
+/* SECTION - CAPA */
+.capa-container {
   width: 100%;
-  margin: 1rem auto;
 }
-
-.title p {
-  text-align: center;
-  height: 8vh;
-  margin-bottom: 1.5rem;
-}
-
-/* SEÇÃO INICIAL */
 
 .capa {
-  clear: both;
   text-align: center;
-  width: 90%;
+  width: 80%;
   margin: 2rem auto;
   padding-bottom: 1rem;
-  min-height: 10rem;
   border-bottom: 1px solid var(--color-secondary);
 }
 
@@ -133,7 +98,6 @@ h3 {
   text-align: left;
   margin-bottom: 1.5rem;
   font-size: 3.4rem;
-  margin-left: 5rem;
 }
 
 .capa .p1 {
@@ -145,125 +109,78 @@ h3 {
   margin-bottom: 2rem;
 }
 
-/* SEÇÃO LAVAGEM - POLIMENTO */
-.lavagem,
-.polimento {
-  float: left;
-  padding: 1rem;
-  margin-top: 3rem;
-  margin-left: 30rem;
-  margin-bottom: 3rem;
-  max-width: 30%;
-  min-height: 60vh;
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-secondary);
-  border-radius: 35px 10px;
-  box-shadow: 0 0 10px var(--color-secondary);
-}
-
-.img-lavagem,
-.img-polimento {
-  display: inline-block;
-  width: 30%;
-}
-
-.img-lavagem img,
-.img-polimento img {
-  display: block;
-  margin: 0 1rem;
-  width: 25vh;
-  border-radius: 10px;
-}
-
-.descricao-lavagem,
-.descricao-polimento {
-  width: 60%;
-  float: right;
+/* SECTION SERVICES */
+.services {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
   margin-top: 4rem;
+  flex-wrap: wrap;
+  gap: 5rem;
 }
 
-/* SEÇÃO INTERIOR - RODAS */
-.interior,
-.rodas {
-  float: right;
-  padding: 1rem;
-  width: 30%;
-  min-height: 60vh;
-  margin-top: 3rem;
-  margin-right: 30rem;
-  margin-bottom: 3rem;
+.card {
+  max-width: 45%;
   background-color: var(--color-primary);
   border: 1px solid var(--color-secondary);
   border-radius: 35px 10px;
   box-shadow: 0 0 10px var(--color-secondary);
 }
 
-.img-interior,
-.img-rodas {
-  display: inline-block;
-  width: 30%;
+.cards-container {
+  display: flex;
+  padding: 3rem;
 }
 
-.img-interior img,
-.img-rodas img {
-  display: block;
-  margin: 0 1rem;
-  width: 25vh;
-  border-radius: 10px;
+.cards-img {
+  width: 40%;
+  border-radius: 0.8rem;
 }
 
-.descricao-interior,
-.descricao-rodas {
-  width: 60%;
-  float: right;
-  margin-top: 3rem;
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.6rem;
 }
 
-/* SEÇÃO READ */
-.read {
-  clear: both;
-  display: block;
-  margin: 1rem auto;
-  padding: 4rem 0 1rem;
-  width: 60%;
+/* SECTION - SERVICES - ITEMS */
+
+.itens-servicos {
+  margin: 1rem 0 0 3rem;
 }
 
-#img-detalhes {
-  float: left;
-  width: 50%;
+.img-check {
+  width: 1.2rem;
+  margin-right: 1rem;
 }
 
-#img-detalhes img {
-  display: block;
-  width: 20rem;
-  margin: 0 auto;
-}
-
-#list-detalhes {
-  float: right;
-  width: 50%;
-  height: 20rem;
-}
-
-#itens {
-  clear: both;
-  list-style-type: square;
-  font-size: 1.8rem;
-  padding: 0;
-  margin: 0.5rem 2rem;
-}
-
-.read p {
-  clear: both;
+.title h3 {
   text-align: center;
-  margin: 2rem 0;
-  padding: 5rem 0 0;
+  font-size: 2.6rem;
+  margin: 1.5rem 0;
 }
+
+.title {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.title p {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+}
+
+/* BUTTON - MORE */
 
 .btn {
-  clear: both;
-  width: 50%;
-  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem auto 0;
 }
 
 .btn-more {
@@ -286,10 +203,55 @@ h3 {
   cursor: pointer;
 }
 
+/* SECTION - IMAGES */
+
+/* SEÇÃO READ */
+.read {
+  width: 60%;
+  margin: 10rem auto 0;
+}
+
+.read-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 5rem; */
+}
+
+.read-img {
+  width: 30%;
+}
+
+.content-list {
+  width: 50%;
+}
+
+.itens {
+  list-style-type: square;
+  font-size: 1.8rem;
+  margin: 0 2rem;
+  line-height: 1.8;
+}
+
+span {
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+.read h3 {
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+.read p {
+  text-align: center;
+  margin: 2rem 0;
+}
+
 /* FOOTER */
 footer {
   width: 100%;
-  clear: both;
   line-height: 3rem;
   text-align: center;
   background-color: var(--color-secondary);
