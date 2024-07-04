@@ -274,11 +274,11 @@ footer {
 
 /* RESPONSIVIDADE */
 @media screen and (max-width: 48rem) {
-  .header-content {
+  .header-cont {
     flex-direction: column;
   }
 
-  .nav-list-link {
+  .navi-list-link {
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.2s;
