@@ -30,7 +30,7 @@ html {
   font-size: 1.8rem;
 }
 
-.container-main {
+.cont-main {
   width: 100%;
 }
 
@@ -53,32 +53,31 @@ a:visited {
   opacity: 0.95;
 }
 
-.header-content {
+.header-cont {
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
+  padding-top: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-nav-list {
+.header-navi-list {
   display: flex;
-  align-items: center;
   gap: 2rem;
   list-style: none;
   letter-spacing: 0.1rem;
 }
 
-.nav-list-link {
+.navi-list-link {
   padding: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   transition: 0.2s;
 }
 
-.nav-list-link:hover {
+.navi-list-link:hover {
   text-decoration: underline;
-  border-radius: 0.5rem;
   color: var(--color-primary);
 }
 

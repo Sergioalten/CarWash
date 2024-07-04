@@ -77,7 +77,6 @@ a:visited {
 
 .nav-list-link:hover {
   text-decoration: underline;
-  border-radius: 0.5rem;
   color: var(--color-primary);
 }
 
