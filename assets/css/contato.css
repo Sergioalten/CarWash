@@ -47,8 +47,12 @@ a:visited {
 /* CABEÇALHO */
 .header {
   background: var(--color-secondaryOpacity);
-  width: 100%;
+  width: 100vw;
   display: flex;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
 }
 
 .header-content {
@@ -75,43 +79,39 @@ a:visited {
 
 .nav-list-link:hover {
   text-decoration: underline;
-  border-radius: 0.5rem;
   color: var(--color-primary);
 }
 
 /* CONTEÚDO */
-#content {
+.content {
   width: 50%;
 }
 
-#form {
+.form {
   width: 100%;
-  margin-top: 5rem;
-  margin-left: 10rem;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-around;
+  margin-left: 5rem;
 }
 
-h2 {
-  margin-left: 10rem;
-  margin-bottom: 5rem;
+.form-title {
   font-size: 3.4rem;
+  padding: 3rem;
 }
 
-label {
+.label {
+  margin-top: 0.5rem;
   font-size: 2rem;
-}
-
-label,
-input,
-textarea {
-  display: block;
-  margin-left: 2rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.4rem;
 }
 
 input,
 textarea {
+  border: none;
+  border-radius: 0.4rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
   width: 80%;
@@ -131,8 +131,8 @@ textarea {
   resize: none;
 }
 
-#btn-form {
-  margin-left: 3rem;
+.btn-form {
+  margin-left: 5rem;
   width: 10rem;
   font-size: 1.6rem;
   border: none;
@@ -143,7 +143,7 @@ textarea {
   transition: 0.3s;
 }
 
-#btn-form:hover,
+.btn-form:hover,
 #btn-modal:hover {
   font-weight: bold;
   opacity: 0.8;
@@ -218,4 +218,41 @@ footer {
   line-height: 3rem;
   text-align: center;
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 72rem) {
+  .header-content {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-nav-list {
+    display: flex;
+    gap: 0.1rem;
+    font-size: 1.6rem;
+  }
+
+  .nav-list-link {
+    transition: 0.2s;
+  }
+
+  .content {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form {
+    width: 100%;
+    margin: auto;
+  }
+
+  footer {
+    position: static;
+    margin-top: 5rem;
+  }
 }

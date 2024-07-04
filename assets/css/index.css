@@ -28,6 +28,7 @@ body {
   background: var(--color-backgroud);
   width: 100%;
   font-size: 1.8rem;
+  transition: 0.2s ease-out;
 }
 
 .container {
@@ -247,7 +248,6 @@ a:visited {
 }
 
 #faq-item1 {
-  display: block;
   width: 100%;
   padding: 0.5rem;
   font-size: 1.8rem;
@@ -292,7 +292,6 @@ a:visited {
 }
 
 .resposta-on1 {
-  clear: both;
   display: block;
   width: 100%;
   position: relative;
@@ -306,7 +305,6 @@ a:visited {
 
 .resposta-off1 {
   pointer-events: none;
-  clear: both;
   width: 100%;
   position: relative;
   margin-bottom: -5rem;
@@ -318,7 +316,6 @@ a:visited {
 }
 
 .resposta-on2 {
-  clear: both;
   display: block;
   width: 100%;
   position: relative;
@@ -332,7 +329,6 @@ a:visited {
 
 .resposta-off2 {
   pointer-events: none;
-  clear: both;
   width: 100%;
   position: relative;
   margin-bottom: -5rem;
@@ -344,7 +340,6 @@ a:visited {
 }
 
 .resposta-on3 {
-  clear: both;
   display: block;
   width: 100%;
   position: relative;
@@ -358,7 +353,6 @@ a:visited {
 
 .resposta-off3 {
   pointer-events: none;
-  clear: both;
   width: 100%;
   position: relative;
   margin-bottom: -5rem;
@@ -370,7 +364,6 @@ a:visited {
 }
 
 .resposta-on4 {
-  clear: both;
   display: block;
   width: 100%;
   position: relative;
@@ -384,7 +377,6 @@ a:visited {
 
 .resposta-off4 {
   pointer-events: none;
-  clear: both;
   width: 100%;
   position: relative;
   margin-bottom: -5rem;
@@ -475,20 +467,29 @@ a:visited {
 }
 
 /* RESPONSIVIDADE */
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 72rem) {
   .header-content {
+    width: 100%;
+    margin: auto;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .header-nav-list {
+    display: flex;
+    gap: 0.1rem;
+    font-size: 1.6rem;
   }
 
   .nav-list-link {
-    font-weight: bold;
-    text-transform: uppercase;
     transition: 0.2s;
   }
 
   .about {
     width: max-content;
     margin-bottom: 4rem;
+    align-items: center;
   }
 
   #about-img {
