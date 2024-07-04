@@ -272,7 +272,7 @@ footer {
 }
 
 /* RESPONSIVIDADE */
-@media screen and (max-width: 72rem) {
+@media screen and (max-width: 45rem) {
   .header-cont {
     width: 100%;
     margin: auto;
@@ -290,7 +290,9 @@ footer {
   .navi-list-link {
     transition: 0.2s;
   }
+}
 
+@media screen and (max-width: 72rem) {
   .capa {
     text-align: start;
   }
@@ -355,15 +357,5 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .footer-container-content {
-    width: 100%;
-    align-items: center;
-    margin-bottom: 4rem;
-  }
-
-  .footer-email {
-    width: 100%;
   }
 }

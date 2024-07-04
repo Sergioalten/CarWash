@@ -212,15 +212,17 @@ textarea {
 /* FOOTER */
 footer {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 0;
-  z-index: 2;
+  background-color: var(--color-secondary);
   line-height: 3rem;
-  text-align: center;
   font-size: 1.6rem;
 }
 
-@media screen and (max-width: 72rem) {
+@media screen and (max-width: 45rem) {
   .header-content {
     width: 100%;
     margin: auto;
@@ -250,9 +252,18 @@ footer {
     width: 100%;
     margin: auto;
   }
+}
 
-  footer {
-    position: static;
-    margin-top: 5rem;
+@media screen and (max-width: 72rem) {
+  .content {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form {
+    width: 100%;
+    margin: auto;
   }
 }

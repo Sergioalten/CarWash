@@ -467,7 +467,7 @@ a:visited {
 }
 
 /* RESPONSIVIDADE */
-@media screen and (max-width: 72rem) {
+@media screen and (max-width: 45rem) {
   .header-content {
     width: 100%;
     margin: auto;
@@ -485,7 +485,9 @@ a:visited {
   .nav-list-link {
     transition: 0.2s;
   }
+}
 
+@media screen and (max-width: 72rem) {
   .about {
     width: max-content;
     margin-bottom: 4rem;
